@@ -1,0 +1,23 @@
+.container {
+  margin: auto;
+  max-width: 600px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  color: darkgray;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-link-item {
+  padding-right: 2rem;
+}
+
+.nav-link-text {
+  color: black;
+}

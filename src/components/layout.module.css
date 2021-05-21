@@ -21,3 +21,13 @@
 .nav-link-text {
   color: black;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgray;
+  padding: 20px;
+  text-align: center;
+}

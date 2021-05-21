@@ -5,7 +5,8 @@ import {
   heading,
   navLinks,
   navLinkItem,
-  navLinkText
+  navLinkText,
+  footer
 } from './layout.module.css';
 
 const Layout = (props) => {
@@ -15,15 +16,21 @@ const Layout = (props) => {
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>Home</Link>
+            <Link to='/' className={navLinkText}>Home</Link>
           </li>
-          <li>
-            <Link to="/about" className={navLinkText}>About</Link>
+          <li className={navLinkItem}>
+            <Link to='/about' className={navLinkText}>About</Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to='/contact' className={navLinkText}>Contact</Link>
           </li>
         </ul>
       </nav>
       <h1 className={heading}>{props.pageTitle}</h1>
       {props.children}
+      <footer className={footer}>
+        Footer
+      </footer>
     </main>
   );
 }
